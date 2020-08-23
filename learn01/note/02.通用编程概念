@@ -31,11 +31,35 @@ const   constant:u32=10;
 
 
 3.函数
-  
+   //无参无返回值函数
+   fn  other_fn(){
+   }
+   //有参无返回值函数 
+   fn other_fun01(a:u32,b:u32){
+    let c:u32=a+b;
+    println!("c-----{}",c );
+   }
+   
+   //有参有返回值
+   fn other_fun02(a:i32,b:i32) -> i32{
+    return a+b;
+   }
+   
+   //有参有返回值
+   fn other_fun02(a:i32,b:i32) -> i32{
+     a+b
+   }
 
+   
+    //语句是执行一些操作,但是不返回值的指令
+    let z={
+        let x=1;
+        x+1
+    };   
+   
 
 4.注释
-
+    rust注释://
 
 
 5.控制流
