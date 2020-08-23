@@ -63,3 +63,45 @@ const   constant:u32=10;
 
 
 5.控制流
+    //没有小括号
+    //if { }	
+    if  y==1{
+	
+	}
+	
+	//if else {  }
+    if y==1{
+        println!("y =1 ");
+    }else {
+        println!(" y !=1");
+    }
+	
+	//if else if{}
+    if y==1{
+        println!(" y =1 ");
+    }else if y==2 {
+        println!(" y =2 ");
+    }else if y==3{
+        println!(" y =3 ");
+    }
+	
+	
+	//loop
+    let mut counter =0;  //mut可变变量
+    loop {
+        println!("in loop ");
+        if counter==10{
+            break;
+        }
+        counter+=1;
+    }
+
+
+    let result= loop {
+        counter +=1;
+        if counter==20{
+            break   counter*2;
+        }
+    };  //语句
+	
+	
