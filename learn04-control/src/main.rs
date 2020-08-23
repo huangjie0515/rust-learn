@@ -47,4 +47,23 @@ fn main() {
     };
     println!(" result ={}",result);
 
+
+    //while循环
+    let mut i=0;
+    while i!=10{
+        i+=1;
+    }
+    println!(" i = {}",i);
+
+
+    //for循环
+    let arr:[u32;5]=[1,2,3,4,5];
+    for element  in  arr.iter(){
+        println!(" element = {}",element);
+    }
+
+    for element  in  &arr{
+        println!(" result =  {}",element);
+    }
+
 }
