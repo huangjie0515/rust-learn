@@ -1,0 +1,10 @@
+//cargo new project_name 创建一个新项目
+cargo new  project_name
+
+
+//运行当前项目
+cargo  run
+
+
+//build当前项目
+cargo  bild
