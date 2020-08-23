@@ -20,18 +20,18 @@ const   constant:u32=10;
 //2.编译器具有自动推导的能力
 
 2.数据类型
-  bool
-  char
-  数字类型
-  数组
-  自适应类型
-  元组
+  bool                    let is_true:bool=false;  let is_false:bool=true;
+  char                    let a:char='a';let b:char='汉';
+  数字类型                i8,i16, i32,i64,u8,u16,u32,u64     let c:i8=-11;  let e:f32=10.0;       
+  数组                    [Type;size]                let arr: [u32;5] = [1 ,2 ,3 ,4 ,5];      println!("arr[0]={}",arr[0]);     
+  自适应类型              println!("max = {}",usize::max_value()); //18446744073709551615
+  元组                    let tup:(u32,f64,u32)=(110,11.11,11);     let tup:(i32,f32,char)=(-3,3.69,'好');  let (x,y,z)=tup;  //元组的拆解
   结构体
   枚举
 
 
 3.函数
-
+  
 
 
 4.注释
