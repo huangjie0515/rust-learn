@@ -18,7 +18,6 @@ fn main() {
     other_fun();
     other_fun01(2,2);
     let result=other_fun02(1,2);
-    println!("result =  {}",result);
     println!("Hello, world!");
 
     //语句是执行一些操作,但是不返回值的指令
