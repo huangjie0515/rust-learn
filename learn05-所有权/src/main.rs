@@ -60,7 +60,7 @@ fn main() {
         let  h1=String::from("hello");
         let  h2=h1; //h1已经释放过内存
         //println!(" h1 = {}",h1);   //value borrowed here after move   移动到h2,h1就无效
-        println!(" h2 = {}",h2);
+        println!(" h2 = {}",h2)
     }
 
     {
@@ -69,18 +69,48 @@ fn main() {
         println!(" h2 = {}",h2);
         println!(" h1 = {}",h1);
     }
+    {
+        let a="111";
+        let b="222";
+    }
+
+
     let a=1;
     //栈上拷贝
     let b=a;
     println!(" a = {}",a);
     println!(" b = {}",b);
+    {
+        let s1=String::from("11");
+        let s2=s1;
+        //move to s2,s1 invalid
+        println!(" s2 ={}",s2);
 
+        let s1="111";
+        let s2=s1;
+        println!(" s1 = {}",s1);
+        println!(" s2 = {}",s2);
+        //clone
+        //浅拷贝
+        let mut  s3=s2.clone();
+        s3="11111111111111";
+        println!(" s2 = {}",s2);
+        println!(" s3= {}",s3);
+
+        //copy
+        //基本类型都是放在栈上,栈上都可以拷贝;
+        let a=1;
+        let b=a;
+        println!(" a ={}",a);
+
+    }
     //常用的具有copy trait有:
     //所有的整型
     //浮点型
     //字符类型
     //元组
-    //
+
+
 
 
 }
