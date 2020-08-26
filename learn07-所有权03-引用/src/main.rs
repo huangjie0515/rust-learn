@@ -43,6 +43,16 @@ fn main() {
         //1.在任意给定时间,有了可变引用之后不能再有不可变引用
         //2.引用必须有效
     }
+
+
+
+
+
+    {
+        //Drop trait的drop方法，必须是&mut self参数。可变引用会把所有权临时借走，
+        // 可变借用在的时候，所有权变量不能用，必须可变借用无效的时候才能继续用，
+        // 可以把所有权转移走，但是有它的&mut存在、不失效就不能移走所有权。这个设计很巧妙！
+    }
 }
 
 fn gives_ownership() -> String {
@@ -63,7 +73,7 @@ fn modify_s(s: &mut String) {
     s.push_str(",,,,world");
 }
 
-fn dangele() -> &String {
+fn dangle() -> &String {
     //lifetime
     let s = String::from("hello");
     &s
