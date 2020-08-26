@@ -37,9 +37,12 @@ fn main() {
         r3.push_str(" hello world ");
         //println!(" {} ={}", r1, r2);  //r1  r2无法使用
     }
-
-    let ref_s = dangele();
-    println!(" hello world !!!");
+    {
+        //let  mut   ref_s = dangele();
+        //println!(" hello world !!!");
+        //1.在任意给定时间,有了可变引用之后不能再有不可变引用
+        //2.引用必须有效
+    }
 }
 
 fn gives_ownership() -> String {
