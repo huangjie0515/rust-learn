@@ -6,6 +6,7 @@ fn other_fun(){
 //有参无返回值
 fn other_fun01(a:u32,b:u32){
     let c:u32=a+b;
+
     println!("c-----{}",c );
 }
 //有参有返回值
