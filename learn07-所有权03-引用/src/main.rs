@@ -26,8 +26,20 @@ fn main() {
 
         let mut s1 = String::from("111");
         modify_s(&mut s1);
-        println!(" s1 ==  {}",s1);
+        println!(" s1 ==  {}", s1);
     }
+    {
+        let mut s1 = String::from("jk");
+        let r1 = &s1;
+        let r2 = &s1;
+        println!(" {} ={}", r1, r2);
+        let r3 = &mut s1;
+        r3.push_str(" hello world ");
+        //println!(" {} ={}", r1, r2);  //r1  r2无法使用
+    }
+
+    let ref_s = dangele();
+    println!(" hello world !!!");
 }
 
 fn gives_ownership() -> String {
@@ -46,4 +58,10 @@ fn calute_length(s: &String) -> usize {
 
 fn modify_s(s: &mut String) {
     s.push_str(",,,,world");
+}
+
+fn dangele() -> &String {
+    //lifetime
+    let s = String::from("hello");
+    &s
 }
