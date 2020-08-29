@@ -17,4 +17,10 @@ fn main() {
     let ss=String::from("hello");
     let s1=&ss[0..1];
     println!("---- {}  ----",s1);
+
+    let  s1=String::from("abcdefg");
+    let s2=&s1[..4];
+    println!("s2 = {}",s2);
+    println!(" s1 ={}",s1 );
+    //https://www.bilibili.com/video/BV1xJ411B79h?p=10
 }
