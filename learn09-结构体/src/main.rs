@@ -61,6 +61,8 @@ fn main() {
 
     //8.打印结构体
     println!(" xiaoming ={:?}", xiaoming);
+    println!(" xiaoming ={:#?}", xiaoming);
+
 
     println!("Hello, world!");
 }
