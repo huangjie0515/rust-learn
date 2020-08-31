@@ -19,6 +19,10 @@ impl Dog {
     fn get_height(&self) -> f32 {
         self.height
     }
+
+    fn show() {
+        println!(" oh oh oh  oh");
+    }
 }
 
 fn main() {
@@ -27,5 +31,10 @@ fn main() {
         weight: 100.0,
         height: 90.9,
     };
-    println!(" dog ={:#?}",dog);
+    println!(" dog ={:#?}", dog);
+
+    println!(" name ={} ", dog.get_name());
+
+
+    Dog::show();
 }
