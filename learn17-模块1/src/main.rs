@@ -12,32 +12,21 @@
 //(不一定是这个名字)则说明拥有多个crate.
 //(4)crate会将一个作用域的相关功能分组到一起,使得该功能可以很方便的在多个项目之间共享.
 
+mod  factory {
+    pub mod  produce_refrigerator{
+     pub    fn  produce_re(){
+          println!("电冰箱!!!");
+        }
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    mod   produce_washing_machine{
+        fn   produce_washing(){
+            println!("洗衣机!!!");
+        }
+    }
+}
 fn main() {
     println!("Hello, world!");
-
-
-
-
-
-
-
-
-
+    factory::produce_refrigerator::produce_re();
 }
