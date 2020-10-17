@@ -7,4 +7,4 @@ cargo  run
 
 
 //build当前项目
-cargo  bild
+cargo  build
