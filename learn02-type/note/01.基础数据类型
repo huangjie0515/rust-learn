@@ -1,0 +1,13 @@
+i8,i16, i32,i64,u8,u16,u32,u64
+
+
+char
+float
+
+
+isize,usize
+
+
+[]  let arr: [u32; 5] = [1, 2, 3, 4, 5];
+
+()  let tup:(i32,f32,char)=(-3,3.69,'好');
