@@ -71,7 +71,7 @@ fn main() {
     //补充
     let mut v = vec![1, 2, 3, 4, 5];
     let first = &v[0];//不可变引用
-    v.push(6);//mutable borrow occurs here
+   // v.push(6);//mutable borrow occurs here
     //可变之后,不能用之前的不可变引用
     println!(" first = {}", first);
 
