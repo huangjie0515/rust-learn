@@ -10,3 +10,8 @@
 
 **所有权理解**
 **https://blog.csdn.net/tjq980303/article/details/70859949**
+
+
+
+**b站视频课件**
+**https://github.com/anonymousGiga/learn_rust.git**
