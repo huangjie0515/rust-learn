@@ -1,5 +1,5 @@
 [package]
-name = "learn18-模块2"
+name = "date"
 version = "0.1.0"
 authors = ["hj <1158420706@qq.com>"]
 edition = "2018"
@@ -7,6 +7,3 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-mylib = {path= "./mylib"}
-util ={path= "./util"}
-date = {path= "./date"}
