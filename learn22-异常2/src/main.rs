@@ -4,6 +4,8 @@
 //2.傳播錯誤的簡寫方式，提倡的方式
 //3.更進一步的簡寫
 //4.什麼時候用panic!，什麼時候用Result
+   //(1)示例、代碼原型，測試用panic! unwrap\expect
+   //(2)實際項目中應該用Result
 //5.Option和Result
 
 use std::io;
@@ -20,7 +22,7 @@ fn main() {
     }
 }
 
-fn  read_username_from_file() -> Result<String,io::Error>{
+/*fn  read_username_from_file() -> Result<String,io::Error>{
     let f=File::open("hello.txt");
     let mut f=match f {
         Ok(file) => file,
@@ -32,4 +34,11 @@ fn  read_username_from_file() -> Result<String,io::Error>{
         Err(error) =>  Err(error),
     }
 }
+*/
 
+
+fn  read_username_from_file() -> Result<String,io::Error>{
+   let mut  s=String::new();
+    File::open("hello.txt111")?.read_to_string(&mut s);
+    Ok(s)
+}
